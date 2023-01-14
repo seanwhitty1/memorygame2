@@ -1,0 +1,62 @@
+
+
+#game div {
+  border: 1px solid black;
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+}
+
+div div :hover {
+  
+border-color: brown;
+width: 3em;
+}
+
+body {
+  background-image: url('woodenbackground.jpg');
+}
+
+#header {
+  text-align: center;
+  font-size: 4em;
+  font-weight: 3em;
+  text-shadow: 20px;
+  color: rgb(24, 6, 6);
+}
+
+#game {
+  margin-left: 25%;
+  margin-right: 25%;
+justify-content: center;}
+
+button {
+  align-items: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  font-size: 3em;
+}
+
+#high {
+  text-align: center;
+  align-items: center;
+}
+
+#score {
+   background-color: yellow;
+   font-size: 6em;
+}
+
+.highscore {
+  font-size: 5em;
+  color: brown;
+  text-align: center;
+}
+
+#reset {
+  
+  position: absolute;
+  margin-bottom: 200px;
+  
+}
