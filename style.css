@@ -8,7 +8,7 @@
   display: inline-block;
 }
 
-div div :hover {
+div .color :hover {
   
 border-color: brown;
 width: 3em;
@@ -29,13 +29,17 @@ body {
 #game {
   margin-left: 25%;
   margin-right: 25%;
+  max-width: 50%;
 justify-content: center;}
 
 button {
   align-items: center;
-  margin-left: 40%;
-  margin-right: 40%;
-  font-size: 3em;
+  margin-left: 45%;
+  margin-right: 45%;
+  max-width: 10%;
+  font-size: 2em;
+  text-overflow: contain;
+  padding: 10px;
 }
 
 #high {
@@ -48,15 +52,35 @@ button {
    font-size: 6em;
 }
 
-.highscore {
-  font-size: 5em;
+#highscore {
+  
+  font-size: 6em;
   color: brown;
   text-align: center;
+  position: absolute;
+  margin-left: 35%;
+  margin-right: 40%;
+  max-width: 10%;
+  margin-bottom: 400px;
+  
+  z-index: 1;
+  
+
 }
 
 #reset {
+
   
-  position: absolute;
-  margin-bottom: 200px;
-  
+  margin-bottom: 400px;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+  button {
+    size: 50%;
+    font-size: 2em;
+    text-overflow: contain;
+  }
 }

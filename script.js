@@ -16,9 +16,7 @@ if(bestScore == undefined){
   bestElement.innerHTML = `The current high score is currently ${bestScore}, butjust like golf, the lower the better`
 }
 
-let counterElement = document.createElement('h1')
-counterElement.classList.add('highscore')
-
+let counterElement = document.getElementById('highscore')
 counterElement.innerText = ""
 
 const gameButton = document.getElementById('gameStart')
@@ -301,6 +299,6 @@ for(let div of divs2){
 })
 
 document.body.append(resetButton)
-document.body.append(counterElement)
+
 
 
