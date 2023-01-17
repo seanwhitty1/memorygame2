@@ -239,19 +239,28 @@ if (evaluationTime % 2 === 0){
   //when all pairs are passed through, it will contain 5 array elements and we win the game. 
     prompt("you win!")
     
+    permanentArray = [];
+
+    
     
     
   //we will use this conditional to create new and set new highscores
     if(bestScore == undefined){
       localStorage.setItem("best score",totalClicks)
+      totalClicks = 0;
+    counter = 0;
     } else if (totalClicks < parseInt(bestScore)){
       localStorage.setItem("best score",totalClicks)
+      totalClicks = 0;
+    counter = 0;
       
 
     }
     
     let highscore = document.createElement('h1')
     highscore.setAttribute('id','score')
+    totalClicks = 0;
+    counter = 0;
   
 } 
 
@@ -279,6 +288,7 @@ evaluationTime = 0;
 selectedArray = []
 tempArray = []
 tempIndex = []
+permanentArray = []
 
 let divs2 = document.getElementsByTagName('div')
 //a query selector to identify and then loop through all cards back to white (reset)
